@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT Emerald</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      width: 320px;
+      min-height: 300px;
+      padding: 24px;
+      color: #edf7f0;
+      background:
+        radial-gradient(
+          circle at top right,
+          #124b35 0,
+          transparent 55%
+        ),
+        #07100c;
+      font-family: Arial, sans-serif;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border: 1px solid #347858;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #155b3d, #09291c);
+      color: #b9f5d0;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      margin: 5px 0 0;
+      color: #91ad9c;
+      font-size: 12px;
+    }
+
+    .panel {
+      padding: 18px;
+      border: 1px solid #244332;
+      border-radius: 16px;
+      background: rgba(15, 34, 24, 0.88);
+    }
+
+    .panel h2 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .panel p {
+      margin: 0 0 18px;
+      color: #a6bdad;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #55b786;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #168653, #08613c);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 160ms, filter 160ms;
+    }
+
+    button:hover {
+      filter: brightness(1.15);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: #718d7b;
+      font-size: 11px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="brand">
+    <div class="logo">C</div>
+    <div>
+      <h1>ChatGPT Emerald</h1>
+      <p class="subtitle">Your AI, one click away.</p>
+    </div>
+  </header>
+
+  <main class="panel">
+    <h2>Ready to think?</h2>
+    <p>
+      Open ChatGPT in a new tab and continue your
+      conversations on the official website.
+    </p>
+
+    <button id="openChatGPT" type="button">
+      Open ChatGPT ↗
+    </button>
+  </main>
+
+  <footer class="footer">
+    Independent shortcut · Not an official OpenAI extension
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
