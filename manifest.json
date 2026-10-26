@@ -1,0 +1,16 @@
+
+{
+  "name": "ChatGPT Emerald",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "A simple, emerald-themed shortcut to ChatGPT.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
